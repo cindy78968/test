@@ -3,9 +3,8 @@
 <body>
 
 
-  <h1>中華明國身心障礙證明</h1>
-
-  <form action="/action_page.php">
+  <h2>中華民國身心障礙證明</h2>
+ <form action="/action_page.php">
     <fieldset>
   姓名:
   <input name="firstname" type="text">
@@ -45,7 +44,7 @@
   </select>
   <br><br>
   <h2>戶籍遷移註記</h2>
-  <table>
+<table>
   <tr>
     <td>鄉鎮市區</td>
     <td>村里</td>
@@ -87,10 +86,7 @@
  
  
   <h2>障礙類別</h2>
-    
-<style>
- table {
-  font-family: arial, sans-serif;
+    <h4 style="background-color:rgba(255, 99, 71, 0.6);font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -153,30 +149,30 @@ tr:nth-child(even) {
     <td><input type="checkbox" name="障礙類別24" value="其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)">其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)</td>
   </tr>
 </table>
-<br><br>
- <td> 
- <form action="/action_page.php">
- ICD診斷:
-  <input name="firstname" type="text"></td>
-  <br><br>
-   <h2>必要陪伴者優惠</h2>
-   <table style="width:100%">
+
+</h4>
+<style>
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<body>
+  <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
+     
   
-   <tr>
-    <td rowspan="2">國內大眾運輸工具[註記]:</td>
-     </tr>
-  <tr>
-    <td> <input name="firstname" type="text"></td></td>
-    </tr>
-     <tr>
-    <td rowspan="2">進入公民營風景區/康樂場所與文教設施[註記]:</td>
-     </tr>
-      <tr>
-    <td> <input name="firstname" type="text"></td></td>
-    </tr>
-   
-</table>
-<h3>備註:必要陪伴者優惠措施僅就符合項目進行註記</h3>
 <br><br>
         <button type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
 
@@ -184,4 +180,5 @@ tr:nth-child(even) {
 
 </body>
 </html>
+
 
