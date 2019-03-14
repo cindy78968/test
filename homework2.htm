@@ -3,30 +3,93 @@
 <body>
 
 
-                                          <h2>中華明國身心障礙證明</h2>
+  <h1>中華明國身心障礙證明</h1>
 
-<form action="/action_page.php">
+  <form action="/action_page.php">
   姓名:
   <input name="firstname" type="text">
   <br><br>
   <form action="/action_page.php">
   出生日期:
   <input name="firstname" type="text">
-  <br><br><form action="/action_page.php">
+  <br><br>
+  <form action="/action_page.php">
   戶籍地址:
   <input name="firstname" type="text">
-  <br><br><form action="/action_page.php">
+  <br><br>
+  <form action="/action_page.php">
   聯絡人:
+  <input name="firstname" type="text">
+ 
+  <form action="/action_page.php">
+  關係:
+  <input name="firstname" type="text">
+  <br><br>
+  <form action="/action_page.php">
+  鑑定日期:
+  <input name="firstname" type="text">
+  <form action="/action_page.php">
+  重新鑑定日期:
   <input name="firstname" type="text">
   <br><br>
     
+  <h2>障礙等級</h2>
   
+
+<form action="/action_page.php">
+  <select name="cars">
+    <option value="重度">重度</option>
+    <option value="中度">中度</option>
+    <option value="輕度">輕度</option>
+   
+  </select>
+  <br><br>
+  <h2>戶籍遷移註記</h2>
+  <table>
+  <tr>
+    <td>鄉鎮市區</td>
+    <td>村里</td>
+    <td>鄰</td>
+    <td>街路門牌</td>
+    <td>遷入日期</td>
+    <td>承辦人核章</td>
+  </tr>
+  
+  <tr>
+    <td> <form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+  <td></td> 
+  </tr>
+   <tr>
+    <td> <form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+  <td></td> 
+  </tr>
+ 
+</table>
   
  
-  <input type="submit">
-  
+ 
   <h2>障礙類別</h2>
-     table {
+    
+<style>
+ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -42,58 +105,83 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 </style>
-</head>
+
 <body>
-  
+  <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
+     
+  <table>
   
  <tr>
-    <tb>智能障礙者</tb>
-    <tb>植物人</tb>
-    <tb>失智症者</tb>
+    <td><input type="checkbox" name="障礙類別1" value="智能障礙者">智能障礙者</td>
+    <td><input type="checkbox" name="障礙類別2" value="植物人">植物人</td>
+    <td><input type="checkbox" name="障礙類別3" value="失智症者">失智症者</td>
   </tr>
   <tr>
-    <td>自閉症者</td>
-    <td>慢性精神病患者</td>
-    <td>頑性（難治型）癲癇症者</td>
+    <td><input type="checkbox" name="障礙類別4" value="自閉症者">自閉症者</td>
+    <td><input type="checkbox" name="障礙類別5" value="慢性精神病患者">慢性精神病患者</td>
+    <td><input type="checkbox" name="障礙類別6" value="頑性（難治型）癲癇症者">頑性（難治型）癲癇症者</td>
   </tr>
   <tr>
-    <td>視覺障礙者</td>
-    <td>聽覺機能障礙者
+    <td><input type="checkbox" name="障礙類別7" value="視覺障礙者">視覺障礙者</td>
+    <td><input type="checkbox" name="障礙類別8" value="聽覺機能障礙者">聽覺機能障礙者
   </td>
-    <td>平衡機能障礙者</td>
+    <td><input type="checkbox" name="障礙類別9" value="平衡機能障礙者">平衡機能障礙者</td>
   </tr>
   <tr>
-    <td>聲音機能或語言機能障礙者</td>
-    <td>重要器官失去功能者-心臟</td>
-    <td>重要器官失去功能者-造血機能</td>
+    <td><input type="checkbox" name="障礙類別10" value="聲音機能或語言機能障礙者">聲音機能或語言機能障礙者</td>
+    <td><input type="checkbox" name="障礙類別11" value="重要器官失去功能者-心臟">重要器官失去功能者-心臟</td>
+    <td><input type="checkbox" name="障礙類別12" value="重要器官失去功能者-造血機能">重要器官失去功能者-造血機能</td>
   </tr>
   <tr>
-    <td>重要器官失去功能者-呼吸器官</td>
-    <td>重要器官失去功能-吞嚥機能</td>
-    <td>UK</td>
+    <td><input type="checkbox" name="障礙類別13" value="重要器官失去功能者-呼吸器官">重要器官失去功能者-呼吸器官</td>
+    <td><input type="checkbox" name="障礙類別14" value="重要器官失去功能-吞嚥機能">重要器官失去功能-吞嚥機能</td>
+    <td><input type="checkbox" name="障礙類別15" value="重要器官失去功能-胃">重要器官失去功能-胃</td>
   </tr>
   <tr>
-    <td>重要器官失去功能-胃</td>
-    <td>重要器官失去功能-腸道</td>
-    <td>重要器官失去功能-肝臟</td>
+    <td><input type="checkbox" name="障礙類別16" value="重要器官失去功能-腸道">重要器官失去功能-腸道</td>
+    <td><input type="checkbox" name="障礙類別17" value="重要器官失去功能-肝臟">重要器官失去功能-肝臟</td>
+     <td><input type="checkbox" name="障礙類別18" value="重要器官失去功能-腎臟">重要器官失去功能-腎臟</td>
   </tr>
   <tr>
-    <td>重要器官失去功能-腎臟</td>
-    <td>重要器官失去功能-膀胱</td>
-    <td>肢體障礙者</td>
+    <td><input type="checkbox" name="障礙類別19" value="重要器官失去功能-膀胱">重要器官失去功能-膀胱</td>
+    <td><input type="checkbox" name="障礙類別20" value="肢體障礙者">肢體障礙者</td>
+     <td><input type="checkbox" name="障礙類別21" value="顏面損傷者">顏面損傷者</td>
   </tr>
     <tr>
-    <td>顏面損傷者</td>
-    <td>多重障礙者</td>
-    <td>經中央衛生主管機關認定，因罕見疾病而致身心功能障礙者</td>
+    <td><input type="checkbox" name="障礙類別22" value="多重障礙者">多重障礙者</td>
+     <td><input type="checkbox" name="障礙類別23" value="經中央衛生主管機關認定，因罕見疾病而致身心功能障礙者">經中央衛生主管機關認定，因罕見疾病而致身心功能障礙者</td>
+    <td><input type="checkbox" name="障礙類別24" value="其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)">其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)</td>
   </tr>
-  <tr>
-    <td>其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)</td>
-  </tr>
- 
+</table>
+<br><br>
+ <td> 
+ <form action="/action_page.php">
+ ICD診斷:
+  <input name="firstname" type="text"></td>
   <br><br>
-  <input type="submit">
-</form>
+   <h2>必要陪伴者優惠</h2>
+   <table style="width:100%">
+  
+   <tr>
+    <td rowspan="2">國內大眾運輸工具[註記]:</td>
+     </tr>
+  <tr>
+    <td> <input name="firstname" type="text"></td></td>
+    </tr>
+     <tr>
+    <td rowspan="2">進入公民營風景區/康樂場所與文教設施[註記]:</td>
+     </tr>
+      <tr>
+    <td> <input name="firstname" type="text"></td></td>
+    </tr>
+   
+</table>
+<h3>備註:必要陪伴者優惠措施僅就符合項目進行註記</h3>
+<br><br>
+        <button type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
+
+        </form>
 
 </body>
 </html>
+
