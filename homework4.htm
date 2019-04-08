@@ -1,1 +1,236 @@
-efr
+<!DOCTYPE html>
+<html>
+   
+<body " >
+        <script language="javascript" type="text/javascript">
+     function Button1_onclick() {
+            var a = document.getElementById("test1").value;
+           
+            if (a == "") {
+                alert("你尚未填寫姓名");
+            }
+           }                                                                                            
+  function Button2_onclick() {
+            var patient = { "name": "Chalmers", "birthDate": "1974-12-25"};
+            document.getElementById("test1").value = patient.name;
+            document.getElementById("test2").value = patient.birthDate;
+           
+       
+            
+        }
+            function Button3_onclick() {
+            var a = document.getElementById("test1").value;
+            var b = document.getElementById("test2").value;
+          alert("姓名:" + a + ",生日:" + b);
+        }  
+         </script>
+   
+                                                                                                
+    <body onload="Button5_onclick()">
+                                    
+ <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
+  <h1>中華民國身心障礙證明</h1>
+
+    <fieldset>
+ <td>姓名:
+            <input id="test1" name="test1" required="required" /></td>
+                                                              
+        <br><br>
+  <form action="/action_page.php">
+  出生日期:
+<input id="test2" name="firstname" type="text">
+  <form action="/action_page.php">
+  戶籍地址:
+  <input name="firstname" type="text">
+  <br><br>
+  <form action="/action_page.php">
+  聯絡人:
+  <input name="firstname" type="text">
+ 
+  <form action="/action_page.php">
+  關係:
+  <input name="firstname" type="text">
+  <br><br>
+  <form action="/action_page.php">
+  鑑定日期:
+  <input name="firstname" type="text">
+  <form action="/action_page.php">
+  重新鑑定日期:
+  <input name="" type="text">
+  <button type="button" onclick="Button1_onclick()">檢查</button>
+  <button type="button" onclick="Button2_onclick()">給值</button>
+  <button type="button" onclick="Button3_onclick()">呈現</button>                
+  <br><br>
+    </fieldset>
+                <td>
+                    身高(cm):<input id="v01" type="text" name="身高(cm)" size="18"><br>
+                    體重(kg):<input id="v02" type="text" name="體重(kg)" size="18"><br>
+                    <button type="button" onclick="Button4_onclick()">BMI</button>
+                </td>
+                <script>
+
+                    function Button4_onclick() {
+                        var h = document.getElementById("v01").value;
+                        var w = document.getElementById("v02").value;
+                        var h2;
+                        h2 = h / 100;
+                        h2 = h2 * h2;
+                        var BMI;
+                        BMI = w / h2;
+                        alert(BMI);
+                    }
+                </script>                                     
+    
+  <h2>障礙等級</h2>
+  
+
+<form action="/action_page.php">
+  <select  id="g" name="cars">
+    <option value="重度">重度</option>
+    <option value="中度">中度</option>
+    <option value="輕度">輕度</option>
+                      <script>
+
+                    function Button5_onclick() {
+                        var a = new Array("重度", "中度","輕度");
+                        var y = document.getElementById("g");
+                        for (i = 0 ; i < a.length; i++) {
+                            var option = document.createElement("option");
+                            option.text = a[i];
+                            y.add(option);
+                        }
+                    }
+                </script>
+   
+  </select>
+  <br><br>
+  <h2>戶籍遷移註記</h2>
+<table>
+  <tr>
+    <td>鄉鎮市區</td>
+    <td>村里</td>
+    <td>鄰</td>
+    <td>街路門牌</td>
+    <td>遷入日期</td>
+    <td>承辦人核章</td>
+  </tr>
+  
+  <tr>
+    <td> <form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+  <td></td> 
+  </tr>
+   <tr>
+    <td> <form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+    <td><form action="/action_page.php">
+  <input name="firstname" type="text"></td>
+  <td></td> 
+  </tr>
+ 
+</table>
+  
+ 
+ 
+  <h2>障礙類別</h2>
+    <h4 style="background-color:rgba(255, 99, 71, 0.6);font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<body>
+  <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
+     
+  <table>
+  
+ <tr>
+    <td><input type="checkbox" name="障礙類別1" value="智能障礙者">智能障礙者</td>
+    <td><input type="checkbox" name="障礙類別2" value="植物人">植物人</td>
+    <td><input type="checkbox" name="障礙類別3" value="失智症者">失智症者</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="障礙類別4" value="自閉症者">自閉症者</td>
+    <td><input type="checkbox" name="障礙類別5" value="慢性精神病患者">慢性精神病患者</td>
+    <td><input type="checkbox" name="障礙類別6" value="頑性（難治型）癲癇症者">頑性（難治型）癲癇症者</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="障礙類別7" value="視覺障礙者">視覺障礙者</td>
+    <td><input type="checkbox" name="障礙類別8" value="聽覺機能障礙者">聽覺機能障礙者
+  </td>
+    <td><input type="checkbox" name="障礙類別9" value="平衡機能障礙者">平衡機能障礙者</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="障礙類別10" value="聲音機能或語言機能障礙者">聲音機能或語言機能障礙者</td>
+    <td><input type="checkbox" name="障礙類別11" value="重要器官失去功能者-心臟">重要器官失去功能者-心臟</td>
+    <td><input type="checkbox" name="障礙類別12" value="重要器官失去功能者-造血機能">重要器官失去功能者-造血機能</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="障礙類別13" value="重要器官失去功能者-呼吸器官">重要器官失去功能者-呼吸器官</td>
+    <td><input type="checkbox" name="障礙類別14" value="重要器官失去功能-吞嚥機能">重要器官失去功能-吞嚥機能</td>
+    <td><input type="checkbox" name="障礙類別15" value="重要器官失去功能-胃">重要器官失去功能-胃</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="障礙類別16" value="重要器官失去功能-腸道">重要器官失去功能-腸道</td>
+    <td><input type="checkbox" name="障礙類別17" value="重要器官失去功能-肝臟">重要器官失去功能-肝臟</td>
+     <td><input type="checkbox" name="障礙類別18" value="重要器官失去功能-腎臟">重要器官失去功能-腎臟</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="障礙類別19" value="重要器官失去功能-膀胱">重要器官失去功能-膀胱</td>
+    <td><input type="checkbox" name="障礙類別20" value="肢體障礙者">肢體障礙者</td>
+     <td><input type="checkbox" name="障礙類別21" value="顏面損傷者">顏面損傷者</td>
+  </tr>
+    <tr>
+    <td><input type="checkbox" name="障礙類別22" value="多重障礙者">多重障礙者</td>
+     <td><input type="checkbox" name="障礙類別23" value="經中央衛生主管機關認定，因罕見疾病而致身心功能障礙者">經中央衛生主管機關認定，因罕見疾病而致身心功能障礙者</td>
+    <td><input type="checkbox" name="障礙類別24" value="其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)">其他經中央衛生主管機關認定之障礙者(染色體異常、先天代謝異常、先天缺陷)</td>
+  </tr>
+</table>
+</h4>
+   <style>
+      table {   font-family: arial, sans-serif;  
+   border-collapse: collapse;   width: 100%;
+   }  
+   td, th {   border: 1px solid #dddddd;   text-align: left;   padding: 8px;
+   } 
+   tr:nth-child(even) {   background-color: #dddddd;
+   } 
+   </style> 
+   <body> 
+      <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >  
+
+<br><br>
+        <button type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
+
+        </form>
+
+</body>
+</html>
+
+
+
+
